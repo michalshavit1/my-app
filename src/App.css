@@ -1,0 +1,167 @@
+:root{
+  background-color: lightgrey;
+
+}
+
+#elevators {
+
+  position: relative;
+  left: 0px;
+  background-color: lightgrey;
+  height: 264px;
+  width: 440px;
+  padding: 0;
+}
+
+.elevator {
+  position: absolute;
+  margin: 17px 50px;
+  background-color: white;
+  width: 50px;
+  height: 230px;
+  top: 0px;
+  text-align: center;
+  font-size: 24pt;
+  font-family: Futura;
+  color: white;
+}
+
+.car {
+  position: absolute;
+  bottom: 0px;
+  background-image: url("elevator3.svg") ;
+  left: 13px;
+  height: 23px;
+  width: 23px;
+  overflow: hidden;
+}
+
+.car.red{
+  filter: invert(21%) sepia(100%) saturate(7414%) hue-rotate(359deg) brightness(94%) contrast(117%);  
+
+}
+
+.car.green{
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+
+}
+.car.black{
+  filter: none;  
+
+}
+
+.car > div {
+  position: relative;
+
+  top: -187px;
+}
+
+.car > div > div {
+  position: relative;
+  height: 23px;
+}
+
+#elevator1 {
+  left: 0px;
+}
+
+#elevator2 {
+  left: 67px; 
+}
+
+#elevator3 {
+  left: 134px; 
+}
+
+#elevator4 {
+  left: 201px; 
+}
+
+#elevator5 {
+  left: 268px; 
+}
+
+#floors{
+position: relative;
+left: 0px;
+width: 50px;
+height: 230px;
+font-size: 12pt;
+color: white;
+}
+
+
+.floor {
+   position: absolute;
+  bottom: 0px;
+  height: 23px;
+  width: 100%;
+  text-align: center;
+  font-size: 10pt;
+  font-weight: 500;
+  color: black;
+}
+
+.floor > div {
+  position: relative;
+  top: -187px;
+}
+
+.floor > div > div {
+  position: relative;
+  height: 23px;
+}
+
+#buttons { 
+  position: relative;
+  left: 378px;
+  height: 228px;
+  width: 52px;
+  padding: 18px 0px;
+  background-color: lightgrey;
+  margin: 0;
+}
+
+.button-floor { 
+  height: 23px;
+}
+
+.button { 
+  content: 'wait';
+  border: black;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  bottom: 23px;
+  height: 20px;
+  width: 45px;
+  background-color: rgb(39, 138, 39);
+  font-size: 9pt;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+}
+
+
+.button.on {
+    background-color:  rgb(39, 138, 39);
+        visibility: visible;
+
+
+}
+
+
+.button.waiting{
+    background-color: red;
+    content: 'wait';
+    visibility: visible;
+}
+.button.arrived{
+    background-color: lightgrey;
+    border: green;
+    color: green;
+}
+
+#button-floor-1 button.button.arived {
+visibility: hidden;
+}
